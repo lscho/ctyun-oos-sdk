@@ -3,7 +3,7 @@
     "description":"OOS SDK for ctyun",
     "license": "MIT",
     "type": "library",
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
             "OOS\\": "src/"

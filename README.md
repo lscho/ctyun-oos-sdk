@@ -9,4 +9,4 @@ $ composer require lscho/ctyun-oos-sdk
 
 ## 代码许可
 
-The MIT License (MIT).详情见 [License文件](https://github.com/lscho/ctyun-oos-sdk/blob/master/LICENSE).
+The MIT License (MIT).详情见 [License文件](https://github.com/lscho/ctyun-oos-sdk/blob/main/LICENSE).
