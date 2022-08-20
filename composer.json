@@ -1,12 +1,12 @@
 {
-    "name": "lscho/ctyun-oss-sdk",
+    "name": "lscho/ctyun-oos-sdk",
     "description":"OOS SDK for ctyun",
     "license": "MIT",
     "type": "library",
     "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
-            "OOS\\": "src/"
+            "OOS\\": "src/OOS"
         }
     },
     "authors": [
