@@ -1,0 +1,21 @@
+{
+    "name": "lscho/ctyun-oss-sdk",
+    "description":"OOS SDK for ctyun",
+    "license": "MIT",
+    "type": "library",
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "OOS\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "lscho",
+            "email": "me@lscho.com"
+        }
+    ],
+    "require": {
+        "php":">=7.1.0"
+    }
+}
