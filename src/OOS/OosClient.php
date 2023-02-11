@@ -2068,7 +2068,7 @@ class OosClient
         // gets the host name. If the host name is public domain or private domain, form a third level domain by prefixing the bucket name on the domain name.
         $hostname = $this->generateHostname($options[self::OOS_BUCKET]);
 
-        $httpMethod = "GET";
+        $httpMethod = $options[self::OOS_METHOD];
         $region     = $this->getRegionName($options);
         $service    = $this->getServiceName($options);
 
