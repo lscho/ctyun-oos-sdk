@@ -1832,7 +1832,7 @@ class OosClient
         $options[self::OOS_OBJECT] = $object;
         $options[self::OOS_METHOD] = $method;
         if (!isset($options[self::OOS_CONTENT_TYPE])) {
-            $options[self::OOS_CONTENT_TYPE] = '';
+            $options[self::OOS_CONTENT_TYPE] = MimeTypes::getMimetype($object);
         }
         $timeout                    = time() + (int) $timeout;
         $options[self::OOS_PREAUTH] = $timeout;
@@ -3359,12 +3359,12 @@ class OosClient
     const ACCESS_KEY_MAXITEM = "MaxItems";
     const ACCESS_KEY_MARKER  = "Marker";
 
-                                             // Domain Types
-    const OOS_HOST_TYPE_NORMAL  = "normal";  //http://bucket.oss-cn-hangzhou.aliyuncs.com/object
-    const OOS_HOST_TYPE_IP      = "ip";      //http://1.1.1.1/bucket/object
+    // Domain Types
+    const OOS_HOST_TYPE_NORMAL  = "normal"; //http://bucket.oss-cn-hangzhou.aliyuncs.com/object
+    const OOS_HOST_TYPE_IP      = "ip"; //http://1.1.1.1/bucket/object
     const OOS_HOST_TYPE_SPECIAL = 'special'; //http://bucket.guizhou.gov/object
-    const OOS_HOST_TYPE_CNAME   = "cname";   //http://mydomain.com/object
-                                             //OOS ACL array
+    const OOS_HOST_TYPE_CNAME   = "cname"; //http://mydomain.com/object
+    //OOS ACL array
     static $OOS_ACL_TYPES = array(
         self::OOS_ACL_TYPE_PRIVATE,
         self::OOS_ACL_TYPE_PUBLIC_READ,
